@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/sorting-algo-web/static/css/main.5f361e03.chunk.css",
+    "main.js": "/sorting-algo-web/static/js/main.659d05f3.chunk.js",
+    "main.js.map": "/sorting-algo-web/static/js/main.659d05f3.chunk.js.map",
+    "runtime-main.js": "/sorting-algo-web/static/js/runtime-main.b8b2f903.js",
+    "runtime-main.js.map": "/sorting-algo-web/static/js/runtime-main.b8b2f903.js.map",
+    "static/js/2.8788ad41.chunk.js": "/sorting-algo-web/static/js/2.8788ad41.chunk.js",
+    "static/js/2.8788ad41.chunk.js.map": "/sorting-algo-web/static/js/2.8788ad41.chunk.js.map",
+    "index.html": "/sorting-algo-web/index.html",
+    "precache-manifest.9436d7fb3245816545f5d87bb8f84464.js": "/sorting-algo-web/precache-manifest.9436d7fb3245816545f5d87bb8f84464.js",
+    "service-worker.js": "/sorting-algo-web/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/sorting-algo-web/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.8788ad41.chunk.js.LICENSE.txt": "/sorting-algo-web/static/js/2.8788ad41.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/sorting-algo-web/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b8b2f903.js",
+    "static/js/2.8788ad41.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.659d05f3.chunk.js"
+  ]
+}

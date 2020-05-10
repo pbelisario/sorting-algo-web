@@ -19,8 +19,8 @@ function countingSortHelper(array, min, max, animations) {
 
     for(let i = 0; i < array.length; i++) {
         animations[i][1]++;
-        animations.push([i, animations[i]]);
-        animations.push([i, animations[i]]);
+        animations.push([i, animations[i][1]]);
+        animations.push([i, animations[i][1]]);
         count[array[i]]++;
     }
 

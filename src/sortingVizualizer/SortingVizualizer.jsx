@@ -11,9 +11,9 @@ const ANIMATION_SPEED_MS = 1;
 
 const NUMBER_OF_SORTING_ELEMENTS = 210;
 
-const PRIMARY_COLOR = '#6495ed'; // Cornflower blue
+const PRIMARY_COLOR = '#12094a'; // Cornflower blue
 
-const SECONDARY_COLOR = '#ed6495'; // rgb(237,100,149)
+const SECONDARY_COLOR = '#7fd28b'; // rgb(237,100,149)
 
 export default class SortingVizualizer extends React.Component {
     constructor(props) {
@@ -159,7 +159,7 @@ export default class SortingVizualizer extends React.Component {
                 const elementStyle = arrayElements[elementOne].style;
                 setTimeout(() => {
                     elementStyle.backgroundColor = color;
-                    elementStyle.height = `${elementTwo}px`;
+                    elementStyle.height = `${10*elementTwo}px`;
                 }, i * ANIMATION_SPEED_MS)
             } else {
                 setTimeout(() =>{
@@ -173,23 +173,31 @@ export default class SortingVizualizer extends React.Component {
     render() {
         const {array} = this.state;
         return (
-            <div className="array-area">
-                { array.map((value, index) => (
-                    <div className="array-element" 
-                        key={index}
-                        style={{
-                            backgroundColor: PRIMARY_COLOR, 
-                            height: `${value}px`,
-                            }}>
-                        </div>
-                ))}
-
-                <button onClick={() => this.resetArray()}>Create a New Array</button>
-                <button onClick={() => this.quickSort()}>Quick Sort</button>
-                <button onClick={() => this.mergeSort()}>Merge Sort</button>
-                <button onClick={() => this.bubbleSort()}>Bubble Sort</button>
-                <button onClick={() => this.heapSort()}>Heap Sort</button>
-                <button onClick={() => this.countingSort()}>Counting Sort</button>
+            <div className="canvas-ish">
+                <div className="button-area">
+                    <ul className="buttons-list">
+                        <li><button onClick={() => this.resetArray()}>Create a New Array</button></li>
+                        <li><button onClick={() => this.quickSort()}>Quick Sort</button></li>
+                        <li><button onClick={() => this.mergeSort()}>Merge Sort</button></li>
+                        <li><button onClick={() => this.bubbleSort()}>Bubble Sort</button></li>
+                        <li><button onClick={() => this.heapSort()}>Heap Sort</button></li>
+                        <li><button onClick={() => this.countingSort()}>Counting Sort</button></li>
+                        <li><a href='http://pbelisario.github.io/' className='button'><button>Return</button></a></li>
+                    </ul>
+                </div>
+                <div className='array-area'>
+                    <ul>
+                        { array.map((value, index) => (
+                            <li className="array-element" 
+                                key={index}
+                                style={{
+                                    backgroundColor: PRIMARY_COLOR, 
+                                    height: `${value}px`,
+                                    }}>
+                                </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         );
     }

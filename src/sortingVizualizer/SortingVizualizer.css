@@ -1,0 +1,14 @@
+.array-area {
+    margin-bottom: auto;
+    position: relative;
+    left: 2em;
+}
+
+.array-element {
+    width: 0.1em;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0.3%;
+    margin-top: 50%;
+    
+}

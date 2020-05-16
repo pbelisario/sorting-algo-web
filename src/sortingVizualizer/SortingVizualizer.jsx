@@ -182,7 +182,7 @@ export default class SortingVizualizer extends React.Component {
                         <li><button onClick={() => this.bubbleSort()}>Bubble Sort</button></li>
                         <li><button onClick={() => this.heapSort()}>Heap Sort</button></li>
                         <li><button onClick={() => this.countingSort()}>Counting Sort</button></li>
-                        <li><a href='http://pbelisario.github.io/' className='button'><button>Return</button></a></li>
+                        <li><a href='http://pbelisario.github.io/portfolio' className='button'><button>Return</button></a></li>
                     </ul>
                 </div>
                 <div className='array-area'>
